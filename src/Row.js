@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import YouTube from 'react-youtube';
 import axios from "./axios"
-import requests from './requests';
+//import requests from './requests'; 
 import './Row.css';
-import YouTube from "react-youtube";
+// import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
 
 const base_url = 'https://image.tmdb.org/t/p/original/';
@@ -31,7 +31,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
         },
     };
 
-    console.table(movies)
+    //console.table(movies)
 
     const handleClick = (movie) => {
         if (trailerUrl){
